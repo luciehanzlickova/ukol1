@@ -1,0 +1,45 @@
+#1
+ovoce = ["jablko", "banán", "pomeranč", "kiwi", "hruška"]
+print(ovoce[0])   # "jablko"
+print(ovoce[2])   # "pomeranč"
+print(ovoce[-1])  # "hruška"
+#2
+jidla = ["pizza", "sushi", "těstoviny"]
+print(jidla)
+#3
+znamky = [1, 2, 1, 3, 2]
+print(znamky)
+#4
+zvirata = ["pes", "kočka", "králík", "papoušek"]
+print(zvirata[1])   # "kočka"
+print(zvirata[-1])  # "papoušek"
+#5
+cisla = []
+cisla.append(5)
+cisla.append(12)
+cisla.append(3)
+print(cisla)
+#6
+filmy = ["Matrix", "Titanic", "Shrek"]
+for film in filmy:
+   print(film)
+#7
+cisla = [4, 7, 10]
+cisla[1] = 999
+print(cisla)
+#8
+cisla = [1, 2, 3, 4, 5]
+soucet = sum(cisla)
+print("Součet:", soucet)
+#9
+pole = [10, 20, 30]
+print("Velikost pole:", len(pole))
+#10
+znamky = [1, 2, 1, 3, 2]
+prumer = sum(znamky) / len(znamky)
+print("Průměr známek:", prumer)
+#11
+ovoce = ["jablko", "banán", "hruška"]
+for o in ovoce:
+   if o == "banán":
+       print("Banán tam je!")

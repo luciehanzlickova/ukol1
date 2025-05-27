@@ -1,0 +1,50 @@
+#funkce
+import random
+def pozdrav():
+    print("ahoj, jak se mas?")
+
+def dnesni_den():
+    print("dneska je pondeli")
+
+def vypis_cisla():
+    for i in range (1, 6):
+        print(i)
+
+def obdelnik():
+    for _ in range(3):
+        print("*" * 5)
+
+def nalada_dne():
+    nalady = ["vesela", "smutna", "unavena", "lina", "energeticka", ]
+    print(f"dnesni nalada je: {random.choice(nalady)}")
+
+def konec():
+    print("program se ukoncuje...")
+
+
+while True:
+   print("\n--- MENU ---")
+   print("1. Pozdrav")
+   print("2. Dnešní den")
+   print("3. Čísla 1 až 5")
+   print("4. Obdélník z hvězdiček")
+   print("5. Nálada dne")
+   print("6. Konec")
+  
+   volba = input("zadejte cislo: ")
+
+   if volba == "1":
+       pozdrav()
+   elif volba == "2":
+       dnesni_den()
+   elif volba == "3":
+       vypis_cisla()
+   elif volba == "4":
+       obdelnik()
+   elif volba == "5":
+       nalada_dne()
+   elif volba == "6":
+       print("Program se ukončuje...")
+       break
+   else:
+       print("Neplatná volba. Zkus to znovu.")

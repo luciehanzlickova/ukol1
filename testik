@@ -1,0 +1,16 @@
+def uvitej():
+    print("vitej v python svete")
+def moje_mesto():
+    print ("bydlim v Utvine")
+def tri_krat():
+    for i in range(1):
+        print("mam rada python")
+def program_info():
+    print ("python ma 4 funkce")
+    print("kazda funkce dela jine veci")
+    print("tohle zadani mi trvalo 5 minut")
+
+uvitej()
+moje_mesto()
+tri_krat()
+program_info()

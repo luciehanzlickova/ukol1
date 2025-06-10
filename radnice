@@ -1,0 +1,2 @@
+def pozdravit_obcana(jmeno):
+   print(f"Ahoj {jmeno}")

@@ -1,0 +1,5 @@
+def pridej_zvire(seznam, jmeno, druh):
+    seznam.append((jmeno, druh))
+def vypis_zvire(seznam):
+    for index, (jmeno, druh) in enumerate(seznam, start=1):
+        print(f"{index}. {jmeno} ({druh})")

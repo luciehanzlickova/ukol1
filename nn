@@ -1,0 +1,24 @@
+from data import zvirata
+from evidence import pridej_zvire, vypis_zvire
+
+def zobraz_menu():
+    print("veterinarni centrum")
+    print("1 - pridat zvire")
+    print("2 - vypsat vsechna zvirata")
+    print("3 - ukoncit")
+
+while True:
+    zobraz_menu()
+    volba = input("zadej volbu: ")
+
+    if volba == "1":
+        jmeno = input("zadejte jmeno zvirete: ")
+        druh = input("zadejte druh zvirete: ")
+        pridej_zvire(zvirata, jmeno, druh)
+    elif volba == "2":
+        vypis_zvirata(zvirata)
+    elif volba == "3":
+        print("ukoncuji program.")
+        break
+    else:
+        print("neplatna volba, ukus to znova")

@@ -1,0 +1,29 @@
+from utulek import prijmout_zvire
+from nemocnice import prijmout_pacienta, vypis_pacienta 
+from radnice import pozdravit_obcana
+
+def menu():
+   while True:
+       print("\nSpráva města")
+       print("1. Přijmout zvíře do útulku")
+       print("2. Přijmout pacienta do nemocnice")
+       print("3. Vypsat pacienty")
+       print("4. Pozdravit občana")
+       print("5. Konec")
+       volba = input("Zadej volbu: ")
+       if volba == "1":
+           jmeno = input("Zadej jméno zvířete: ")
+           prijmout_zvire(jmeno)
+       elif volba == "2":
+           jmeno = input("Zadej jméno pacienta: ")
+           prijmout_pacienta(jmeno)
+       elif volba == "3":
+           "vypis_pacienty"()
+       elif volba == "4":
+           jmeno = input("Zadej jméno občana: ")
+           pozdravit_obcana(jmeno)
+       elif volba == "5":
+           print("Ukončuji program.")
+           break
+       else:
+           print("Neplatná volba. Zkus to znovu.")

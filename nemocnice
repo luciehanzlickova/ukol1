@@ -1,0 +1,7 @@
+pacienti = []
+def prijmout_pacienta(jmeno):
+   pacienti.append(jmeno)
+def vypis_pacienty():
+   print("Pacienti:")
+   for jmeno in pacienti:
+       print(jmeno)
